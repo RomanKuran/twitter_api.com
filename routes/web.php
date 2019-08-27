@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('add', 'TwitterController@add');
 Route::get('feed', 'TwitterController@feed');
+Route::get('remove', 'TwitterController@remove');
+
