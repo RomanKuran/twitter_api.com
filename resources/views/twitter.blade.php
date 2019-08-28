@@ -6,9 +6,5 @@
 </head>
 <body>
 
-<?php
-    var_dump($data);
-?>
-
 </body>
 </html>
