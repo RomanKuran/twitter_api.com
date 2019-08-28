@@ -21,7 +21,7 @@ class TwitterController extends Controller
     }
 
     public function feed(TwitterFeedRequest $request){
-        $data = Twitter::getHomeTimeline(['count' => 20, 'format' => 'json']);
+        $data = Twitter::getHomeTimeline(['count' => 20, 'format' => 'json', 'screen_name' => $request->secret]);
         return view('twitter');
     }
 
